@@ -99,13 +99,11 @@ header a {
     padding: 20px;
     font-size: 14px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .hero article img {
     width: 250px;
     height: auto;
+    float: right;
 }
 .hero article p {
     margin: 10px;
