@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #2596be;
+    --secondary: #e3921c;
+    --black: #000000;
+    --white: #ffffff;
+    --highlight: #e1e9e8;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--black);
+}
+
+header, 
+main, 
+footer {
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+nav, p, section, article {
+    padding: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+header img {
+    width: 80px;
+    height: auto;
+}y
+header nav {
+    margin: 10px;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+header a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.hero h1 {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    padding: 20px;
+    font-size: 48px;
+    text-align: center;
+}
+.hero article {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero article img {
+    width: 250px;
+    height: auto;
+}
+.hero article p {
+    margin: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Sections */
+section h2 {
+    padding: 20px;
+    margin: 10px 0;
+    font-family: var(--heading-font);
+    font-size: 30px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+}
+section p {
+    font-size: 16px;
+    color: var(--black);
+    margin: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .socialmedia img {
+    width: 60px;
+    height: auto;
+    margin: 0 10px;
+}
