@@ -40,24 +40,21 @@ nav, p, section, article {
 
 /* Header */
 header {
-    padding: 20px;
+    padding: 20px 50px;
     width: 100%;
     background-color: var(--secondary);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
     gap: 20px;
 }
 header img {
     width: 80px;
     height: auto;
-}y
-header nav {
-    margin: 10px;
 }
-header nav ul {
-    list-style-type: none;
+header nav {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 header a {
@@ -127,6 +124,37 @@ section p {
     color: var(--black);
     margin: 10px;
 }
+
+/* History Section */
+.history-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history-container img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Adventure Section */
+.adventure-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.adventure-container .adventure-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.adventure-container .adventure-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 /* footer */
 footer {
