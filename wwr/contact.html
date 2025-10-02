@@ -23,55 +23,73 @@
     <main>
         <section class="contact-section">
             <h2>White Water Rafting Company</h2>
-            <p>123 Main River Street, Kolob California</p>
-            <p>+1 999 999 999</p>
-            <p>info@whitewater.com</p>
+            <h6>123 Main River Street, Kolob California</h6>
+            <h6>+1 999 999 999</h6>
+            <h6>info@whitewater.com</h6>
             <div class="contact-container">
                 <!-- Google Maps iframe -->
-                <div>
-                    <div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8680911268994!2d-117.5795357!3d37.2343326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c90e441cb48f47%3A0xe39c790f11e1cb1d!2sKolob%20Reservoir!5e0!3m2!1sen!2sus!4v1695927652451!5m2!1sen!2sus"
-                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.8680911268994!2d-117.5795357!3d37.2343326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c90e441cb48f47%3A0xe39c790f11e1cb1d!2sKolob%20Reservoir!5e0!3m2!1sen!2sus!4v1695927652451!5m2!1sen!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
                 <!-- contact form -->
                 <form class="contact-form">
-                    <div>
+                    <div class="form-group">
                         <label for="full-name">Name</label>
                         <input type="text" name="full-name" id="full-name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
                         <label for="email"> Email</label>
-                        <input type="email">
+                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                    </div>
+                    <div class="form-group">
                         <label>Message Purpose</label>
-                        <div>
-                            <input type=" radio" id="inquiry" name="purpose" value="inquiry">
-                            <label for="inquiry">General Inquiry</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="reservation" name="purpose" value="reservation">
-                            <label for="reservation">Reservation Question</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                            <label for="suggestion">Website Suggestion</label>
+                        <div class="purpose-container">
+                            <div class="radio-group">
+                                <input type="radio" id="inquiry" name="inquiry" value="inquiry">
+                                <label for="inquiry">General Inquiry</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="reservation" name="reservation" value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="suggestion" name="suggestion" value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
                         </div>
                     </div>
-
-                    <div>
+                    <div class="message-group">
                         <label for="message">Message</label>
                         <textarea name="message" id="message" placeholder="Type here"></textarea>
                     </div>
-
-                    <div>
+                    <div class="radio-group">
                         <input type="checkbox" name="subscribe" id="subscribe">
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                     </div>
 
                     <button type="submit">Get in Touch!</button>
                 </form>
-
+            </div>
+            <div class="serve-container">
+                <h2>We are here to server you </h2>
+                <div class="employee-container">
+                    <div class="employee-card">
+                        <img src="images/employee-one.jpg" alt="picture of employee one">
+                        <p>Employee Profile</p>
+                    </div>
+                    <div class="employee-card">
+                        <img src="images/employee-two.jpg" alt="picture of employee two">
+                        <p>Employee Profile</p>
+                    </div>
+                    <div class="employee-card">
+                        <img src="images/employee-three.jpg" alt="picture of employee three">
+                        <p>Employee Profile</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
